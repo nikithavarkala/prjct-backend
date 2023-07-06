@@ -31,13 +31,13 @@ const register = (req,res)=>{
         storedata.push(tempobj);
         // res.send(storedata);
 
-        const token=jwt.sign({user:"items.email"},secretkey);
-        res.send({
-            msg:"successed!!!",
-            token:token,
-            name:data.name
-        })
-        // jsontoken(data,200,res);
+        // const token=jwt.sign({user:"items.email"},secretkey);
+        // res.send({
+        //     msg:"successed!!!",
+        //     token:token,
+        //     name:data.name
+        // })
+        jsontoken(data,200,res);
     }
 }
 
